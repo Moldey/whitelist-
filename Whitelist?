@@ -9,11 +9,11 @@ end
 local Name = game:GetService('Players').LocalPlayer.Name;
 local ID = game:GetService('Players').LocalPlayer.userId;
 local Format = (Name..'|'..ID);
-local Whitelist = game:HttpGet('WHITELISTHERE');-- requires pastebin link
+local Whitelist = game:HttpGet('https://pastebin.com/raw/NtvD6zvb');-- requires pastebin link
                                                                      
 if Contains(Whitelist, Name) and Contains(Whitelist, ID) then
 print("Welcome")
-  loadstring(game:HttpGet(('GUIPASTEBINHERE'),true))()-- can also have a script here insted of a loadstring
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Moldey/script/master/script", true))()-- can also have a script here insted of a loadstring
 else
 print("Not whitelisted :/")
    game.StarterGui:SetCore("SendNotification", {
